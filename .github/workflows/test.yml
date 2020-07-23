@@ -61,7 +61,7 @@ jobs:
           ${{ runner.os }}-
     - name: example tests
       run: |
-        rustup update --no-self-update
+        rustup update
         cargo run --example playground
         cargo run --example structured
   cross-compile:
